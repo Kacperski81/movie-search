@@ -14,14 +14,14 @@ const [movies, setMovies] = useState([])
       const data = await res.json()
       setMovies(data.results)
     } catch(err) {
-      // console.log(err)
+      console.log(err)
     }
   }
 
   return (
     <>
       <form className="form" onSubmit={searchMovies}>
-        <label className="label" htmlFor="query">Movie Name</label>
+        // <label className="label" htmlFor="query">Movie Name</label>
         <input type="text" className="input" name="query" placeholder="movie title here"
           value={query} onChange={(e) => setQuery(e.target.value)}/>
         <button className="button" type="submit">Search</button>

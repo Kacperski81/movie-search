@@ -110,7 +110,7 @@ small {
      "image rating rating"
      "image para para";
      justify-content: space-around;
-     border: 1px solid red;
+     /* border: 1px solid red; */
   }
 
   .card--content {
@@ -119,7 +119,7 @@ small {
     align-items: space-between;
     justify-content: space-between;
     padding: 1rem;
-    border: 1px solid red;
+    /* border: 1px solid red; */
     margin: 0;
   }
 
@@ -131,12 +131,12 @@ small {
     margin: 0;
     grid-area: header;
     text-align: center;
-    border: 1px solid red;
+    /* border: 1px solid red; */
   }
 
   .release {
     grid-area: release;
-    border: 1px solid red;
+    /* border: 1px solid red; */
   }
 
   .rating {
@@ -147,7 +147,7 @@ small {
   .card--desc {
     margin: 0;
     grid-area: para;
-    border: 1px solid red;
+    /* border: 1px solid red; */
     align-self: flex-end;
   }
 }
