@@ -6,12 +6,12 @@ const [movies, setMovies] = useState([])
 
   const searchMovies = async (e) => {
     e.preventDefault()
-    const url = `https://api.themoviedb.org/3/search/movie?api_key=1e486444a6fc06af6bff3301133f8513&language=en-UK&query=${query}&page=1&include_adult=false`
+    const url = `https://api.themoviedb.org/3/search/movie?api_key=1e486444a6fc06af6bff3301133f8513&language=en-UK&query=${query}k&page=1&include_adult=false`
 
     try {
       const res = await fetch(url);
-      const data = await res.json()
-      setMovies(data.results)
+      const data = await res.json();
+      !data.result ? console.log('no data') : setMovies(data.result)
     } catch(err) {
       console.log(err)
     }
