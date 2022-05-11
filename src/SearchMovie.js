@@ -6,7 +6,6 @@ const [movies, setMovies] = useState([])
 
   const searchMovies = async (e) => {
     e.preventDefault()
-    const query = 'holmes'
     const url = `https://api.themoviedb.org/3/search/movie?api_key=1e486444a6fc06af6bff3301133f8513&language=en-UK&query=${query}&page=1&include_adult=false`
 
     try {
