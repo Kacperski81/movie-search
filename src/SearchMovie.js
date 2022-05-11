@@ -21,7 +21,6 @@ const [movies, setMovies] = useState([])
   return (
     <>
       <form className="form" onSubmit={searchMovies}>
-        // <label className="label" htmlFor="query">Movie Name</label>
         <input type="text" className="input" name="query" placeholder="movie title here"
           value={query} onChange={(e) => setQuery(e.target.value)}/>
         <button className="button" type="submit">Search</button>
